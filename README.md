@@ -1,2 +1,2 @@
-# Rn_BoilerPlate
-This Repo is boilerplate for React Native Project
+# Rn_Template
+This Repo is template for React Native Project
