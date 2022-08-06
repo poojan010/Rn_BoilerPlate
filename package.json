@@ -1,0 +1,8 @@
+{
+    "name": "rn_template",
+    "version": "0.0.1",
+    "description": "React Native Template by Poojan Bhatt(poojan010)",
+    "repository": "https://github.com/poojan010/Rn_Template.git",
+    "author": "Poojan Bhatt <pdbhatt010@gmail.com>",
+    "license": "MIT"
+}
