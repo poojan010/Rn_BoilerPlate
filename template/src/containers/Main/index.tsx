@@ -25,7 +25,7 @@ const Main: React.FC<ScreenProps> = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.greeting}>
-                {"Hello Rn Dev \n Enjoy this awesome template created by "}
+                {"Hello Rn Dev \n\n Enjoy this awesome template created by "}
                 <Text style={styles.name}>Poojan Bhatt</Text>
             </Text>
 
@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
     },
     greeting: {
         margin: 16,
-        fontSize: 18,
-        fontWeight: 'bold',
+        fontSize: 17,
+        fontWeight: '500',
         textAlign: 'center',
-        marginHorizontal: 30
+        marginHorizontal: 40
     },
     name: {
         color: 'red',
