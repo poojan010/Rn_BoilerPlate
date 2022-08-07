@@ -1,6 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Linking, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+
+
+const github_url = "https://github.com/poojan010"
+
+const portfolio_url = "https://poojan-bhatt.netlify.app/"
 
 
 interface ScreenProps extends NativeStackScreenProps<any> {
@@ -9,11 +14,33 @@ interface ScreenProps extends NativeStackScreenProps<any> {
 
 const Main: React.FC<ScreenProps> = () => {
 
+    const openGithub = () => {
+        Linking.openURL(github_url)
+    }
+
+    const openPortfolio = () => {
+        Linking.openURL(portfolio_url)
+    }
+
     return (
         <View style={styles.container}>
             <Text style={styles.greeting}>
-                {"Hello Rn Dev \n \n Enjoy this template created by Poojan Bhatt"}
+                {"Hello Rn Dev \n Enjoy this awesome template created by "}
+                <Text style={styles.name}>Poojan Bhatt</Text>
             </Text>
+
+            <TouchableOpacity onPress={openGithub}>
+                <Text style={styles.linkText}>
+                    Checkout my Github Profile
+                </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={openPortfolio}>
+                <Text style={styles.linkText}>
+                    Checkout my Portfolio
+                </Text>
+            </TouchableOpacity>
+
         </View>
     );
 };
@@ -26,10 +53,21 @@ const styles = StyleSheet.create({
     },
     greeting: {
         margin: 16,
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: 'bold',
         textAlign: 'center',
         marginHorizontal: 30
+    },
+    name: {
+        color: 'red',
+        fontSize: 20
+    },
+    linkText: {
+        margin: 16,
+        fontSize: 16,
+        color: 'blue',
+        textAlign: 'center',
+
     }
 });
 
