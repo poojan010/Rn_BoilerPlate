@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 
@@ -8,7 +8,6 @@ interface ScreenProps extends NativeStackScreenProps<any> {
 }
 
 const Main: React.FC<ScreenProps> = () => {
-
 
     return (
         <View style={styles.container}>
